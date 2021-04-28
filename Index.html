@@ -7,39 +7,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>texto</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+
+    <!-- NAVBAR + HEADER COM LOGO SENAI-->
+
     <header class="container">
         <div>
             <div>
-                <img src="https://firjansenai.com.br/cursorio/portal/resources/img/logo_firjan_senai.gif" alt="">
-                
+                <img src="https://firjansenai.com.br/cursorio/portal/resources/img/logo_firjan_senai.gif"
+                    alt="Senai-logo">
+
             </div>
             <div>
-              <span> </span>
-              <span> </span>  
+                <span> </span>
+                <span> </span>
             </div>
         </div>
         <nav class="menu">
             <ul>
-                <li><a href="Index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="apoio.html">Matérial de apoio</a></li>
-                <li><a href="conduites.html">conduites</a></li>
+                <li><a href="conduites.html">Conduites</a></li>
                 <li><a href="eletrica.html">Elétrica</a></li>
             </ul>
         </nav>
 
     </header>
 
+    <!-- SLIDESHOW CONTAINR-->
+    <div class="slideshow-container">
 
-    <section>
-        <div class="titulo">
+        <!-- imagens full width-->
+        <div class="mySlides fade">
+            <div class="numbertext"> 1 / 3 </div>
+            <a href="#objetivo"><img src="fotos/fundo-luz-1600.jpg" style="width: 100%;"></a>
 
-         
         </div>
-        
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 2 / 3 </div>
+            <a href="#tecnologia"><img src="fotos/img2-2-1600.jpg" style="width: 100%;"></a>
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext"> 3 / 3 </div>
+            <a href=""><img src="fotos/img-3.jpg" style="width: 100%;"></a>
+
+        </div>
+
+        <!-- Botão NEXT img-->
+        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
+        <a class="next" onclick="plusSlides(1)">&#10095</a>
+        <div style="text-align:center;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+    
+    <section>
+        <div id="objetivo"class="conteudo" style="background-color: #E89800;">
+            <div>
+                <h2 class="titulo">Desmistificando a eletricidade</h2>
+
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed asperiores provident soluta in accusantium nam vel error quam, molestiae molestias consectetur sint architecto hic temporibus odit vero sapiente sunt veniam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit aut officiis quae nesciunt, accusamus minima enim voluptates laboriosam, eum quia id exercitationem hic cumque tempore ex, vitae dolores dolorum harum.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, culpa vel, laudantium ea sapiente sequi doloremque, consequuntur corrupti ullam facere beatae asperiores atque. Temporibus assumenda a, repellendus quasi accusamus ullam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt similique perferendis atque, dolor corporis nisi natus quos hic magni reprehenderit quasi fugiat nihil expedita veniam amet aperiam corrupti? Pariatur, nemo?
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod accusamus quasi enim nostrum quis voluptate tempore expedita dolore error quidem aliquam quae dolorum vel, explicabo rem pariatur fuga! Neque, aspernatur.
+                </p>
+            </div>
+
+            <div>
+
+
+
+            </div>
+
+        </div>
+
+
+        <div id="tecnologia" class="conteudo" style="background-color: #8BCFE6;">
+            <div>
+                <h2 class="titulo">Uso da tecnologia no ambiente didático</h2>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, reiciendis fugiat consequuntur nesciunt praesentium architecto minus hic expedita voluptatibus numquam cupiditate rem tenetur in earum excepturi suscipit soluta totam itaque.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum odit maxime eaque quasi. Voluptas quisquam consequuntur reprehenderit qui enim et. Expedita excepturi, aliquid a magni perferendis quis. Similique, deserunt ea!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, recusandae! Aut totam tempora sed corrupti ad necessitatibus eius, rem fugit mollitia quae porro ratione laboriosam dolores. Aspernatur est molestiae exercitationem.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure necessitatibus vel molestiae impedit natus, minima rerum quam sequi itaque doloremque soluta dolor ut eaque neque distinctio similique corporis, illo iste.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus repellendus alias rem officia illo accusantium molestias tempora quas et modi, laudantium unde facere sint magnam placeat deleniti nihil consectetur iste.
+                </p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+
     </section>
+
+
+    <footer>
+
+
+    </footer>
+
+
+    <script src="script.js"></script>
 
 </body>
 
