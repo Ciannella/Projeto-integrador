@@ -128,6 +128,13 @@ html,body{
     color: #FFFFFF;
 }
 
+.copy{
+    background-color: rgb(41, 39, 39);
+    text-align: center;
+    height: 40px;
+    
+
+}
 
 
 
@@ -226,5 +233,44 @@ html,body{
     from {opacity: .4;}
     to{opacity: 1;}
 }
+
+
+
+/*Pagina dos Simuladores*/
+
+.container-simuladores{
+    display: flex;
+}
+
+
+.conteudo1,.conteudo2,.conteudo3{
+    height: 300px; 
+    width: 300px; 
+    background-color: rgb(56, 56, 68); 
+    margin: 40px;
+    border-radius: 20px;
+    box-shadow: 2px -5px 16px rgb(163, 162, 162);
+}
+
+
+.conteudo1:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.conteudo2:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+.conteudo3:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
 
 
