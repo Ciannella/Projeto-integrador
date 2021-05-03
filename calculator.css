@@ -1,0 +1,28 @@
+.titulo-cal{
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.container-cal{
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    border: solid 2px  red;
+    margin: 50px;
+    
+}
+
+.corrente,.resistencia,.tensao,.potencia{
+    margin: 0px 60px;
+    border: solid 2px blue;
+    background-color: rgb(150, 150, 195);
+    width: 400px;
+        
+}
+
+.resposta{
+    height: 50px;
+    background-color: blueviolet;
+
+}
