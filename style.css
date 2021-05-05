@@ -253,11 +253,21 @@ html,body{
 }
 
 
+.conteudo1{
+    background-image: url(fotos/calculadora.png);
+}
+
+.conteudo2{
+    background-image:url(fotos/dimensionamento.png);
+}
+
 .conteudo1:hover{
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     transition: 0.7s;
+    
+
 }
 .conteudo2:hover{
     -webkit-transform: scale(1.1);
@@ -273,4 +283,57 @@ html,body{
 }
 
 
+/*CALCULADORA DE OHMS*/
 
+.titulo-cal{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.container-cal{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    margin: 50px;
+    
+}
+
+.corrente,.resistencia,.tensao,.potencia{
+    margin: 0px 60px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #5CC4E3;
+    box-shadow: 2px -5px 16px rgb(163, 162, 162);
+        
+}
+
+.resposta{
+    padding: 16px;
+    height: 70px;
+    text-align:center;
+    font-size: 20px;
+    background-color: blueviolet;
+    margin: 20px 0px;
+
+}
+
+.nomeclatura{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.titulo_calc{
+    font-size: 28px;
+}
+
+.calc{
+    border: none;
+    height: 20px;
+    width: 100px;
+    margin: 5px;
+}

@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="calculator.css">
     <title>calculadora ohms</title>
 </head>
+
 <body>
     <header class="container">
         <div>
             <div>
                 <img src="https://firjansenai.com.br/cursorio/portal/resources/img/logo_firjan_senai.gif" alt="">
-                
+
             </div>
             <div>
-              <span> </span>
-              <span> </span>  
+                <span> </span>
+                <span> </span>
             </div>
         </div>
         <nav class="menu">
@@ -30,77 +31,119 @@
 
 
 
+        <section>
 
-    <div class="titulo-cal">Calculadora de ohms</div>
-<div class="container-cal">
-    <div class="corrente">
-        <div>
-            <label>Tensão:</label>
-            <input type="number">
+            <div class="titulo-cal">Calculadora de ohms</div>
+            <div class="container-cal ">
+                <div class="corrente">
+                    <div class="titulo_calc"> Cálculo de resistência </div>
+                    <div class="nomeclatura">
+                        <label>Tensão:</label>
+                        <input type="number" class="calc" id="ten_1">
+                    </div>
+                    <div class="nomeclatura">
+                        <label>Corrente:</label>
+                        <input type="number" class="calc" id="corr_1">
+                    </div>
+                    <input type="button" value="calcular" onclick="calcularRes()">
+                    <div class="resposta" id="rel_1">
+
+                    </div>
+                </div>
+
+                <div class="resistencia">
+                    <div class="titulo_calc"> Cálculo de corrente</div>
+                    <div class="nomeclatura">
+                        <label>Tensão:</label>
+                        <input type="number" class="calc" id="ten_2">
+                    </div>
+                    <div class="nomeclatura">
+                        <label>Resistência:</label>
+                        <input type="number" class="calc" id="res_2">
+                    </div>
+                    <input type="button" value="calcular" onclick="calcularCor()">
+                    <div class="resposta" id="rel_2">
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container-cal">
+                <div class="tensao">
+                    <div class="titulo_calc">Cálculo de tensao</div>
+                    <div class="nomeclatura">
+                        <label>Resistência:</label>
+                        <input type="number" class="calc" id="res_3">
+                    </div>
+                    <div class="nomeclatura">
+                        <label>Corrente:</label>
+                        <input type="number" class="calc" id="corr_3">
+                    </div>
+                    <input type="button" value="calcular" onclick="calcularTen()">
+                    <div class="resposta" id="rel_3">
+
+                    </div>
+                </div>
+
+                <div class="potencia">
+                    <div class="titulo_calc"> Cálculo de pontência</div>
+                    <div class="nomeclatura">
+                        <label>Tensão:</label>
+                        <input type="number" class="calc" id="ten_4">
+                    </div>
+                    <div class="nomeclatura">
+                        <label>Corrente:</label>
+                        <input type="number" class="calc" id="corr_4">
+                    </div>
+                    <input type="button" value="calcular" onclick="calcularPot()">
+                    <div class="resposta" id="rel_4">
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div class="wrapper box-links center">
+            <a href="">
+                <img src="https://firjansenai.com.br/cursorio/portal/resources/img/ico_link_firjan_senai.gif"
+                    alt="logo firjan senai">
+            </a>
+            <a href="">
+                <img src="https://firjansenai.com.br/cursorio/portal/resources/img/ico_link_escola_firjan_sesi.gif"
+                    alt="escola logo firjan senai">
+                <div class="push">
+            </a>
+
         </div>
-        <div>
-            <label>Corrente:</label>
-            <input type="number">
-        </div>
-        <input type="button" value="calcular">
-        <div class="resposta" id="rel">
-
-        </div>
-    </div>
-
-    <div class="resistencia">
-        <div>
-            <label>Tensão:</label>
-            <input type="number">
-        </div>
-        <div>
-            <label>Resistência:</label>
-            <input type="number">    
-        </div>
-        <input type="button" value="calcular">
-        <div class="resposta" id="rel">
-
         </div>
 
-    </div>
-</div>
+        <footer class="footer">
+            <div class="texto-footer">
+                <p>Programação: Lucas Ciannella de oliveira <br>Imagens: Lucas Ciannella de oliveira
+                <p>
+            </div>
 
-<div class="container-cal">
-    <div class="tensao">
-        <div>
-            <label>Resistência:</label>
-            <input type="number">
-        </div>
-        <div>
-            <label>Corrente:</label>
-            <input type="number">
-        </div>
-        <input type="button" value="calcular">
-        <div class="resposta" id="rel">
+            <!--links com icone em svg -->
+            <div class="links-svg">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
 
-        </div>
-    </div>
+            <div class="copy">
 
-    <div class="potencia">
-        <div>
-            <label>Tensão:</label>
-            <input type="number">
-        </div>
-        <div>
-            <label>Potência:</label>
-            <input type="number">    
-        </div>
-        <input type="button" value="calcular">
-        <div class="resposta" id="rel">
+                Lucas Ciannella de oliveira - projeto firjan senai &copy;
 
-        </div>
-    
-    </div>
-</div>
+            </div>
+
+        </footer>
 
 
 
-
-    
+        <script src="calc.js"></script>
 </body>
+
 </html>
