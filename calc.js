@@ -8,7 +8,7 @@ function calcularRes() {
         resposta.innerText = ' Atenção! Por favor preencha todos os campos'
     } else {
         const resistencia = tensao / corrente
-        resposta.innerText = `${resistencia.toFixed(2)}`
+        resposta.innerText = `${resistencia}`
 
 
     }
@@ -31,7 +31,7 @@ function calcularCor() {
         resposta.innerText = 'Atenção! Por favor preencha todos os campos'
     } else {
         const corrente = tensao / resistencia
-        resposta.innerText = `${corrente.toFixed(2)}`
+        resposta.innerText = `${corrente}`
     }
 
 
@@ -50,7 +50,7 @@ function calcularTen() {
         resposta.innerText = 'Atenção! Por favor preencha todos os campos'
     } else {
         const tensao = resistencia * corrente
-        resposta.innerText = `${tensao}`
+        resposta.innerText = `${tensao} `
 
 
 
@@ -76,3 +76,7 @@ function calcularPot() {
 
 
 }
+
+
+
+
