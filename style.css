@@ -374,3 +374,16 @@ svg{
     filter: brightness(60%);
     transition: 0.7s;
 }
+
+
+
+/*PAGINA SIMULADOR*/
+
+.myCanvas{
+    display: flex;
+    width:1300px;
+    height:650px;
+    border: solid 3px black;
+    
+    
+}
