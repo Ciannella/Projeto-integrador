@@ -380,10 +380,78 @@ svg{
 /*PAGINA SIMULADOR*/
 
 .myCanvas{
-    display: flex;
-    width:1300px;
-    height:650px;
-    border: solid 3px black;
-    
+    height: 650px;
+    width: 1050px;
+    border: 2px solid black;
+    background-image: url(https://www.varejaodastintas.com.br/wp-content/uploads/2017/11/shutterstock_109482227-1024x802.jpg);
     
 }
+.quadro_força{
+    width: 100px;
+    height: 150px;
+    background-color: #272121;
+    color: white;
+    display: flex;
+
+}
+
+.lampada{
+    background-color: chocolate;
+    width: 50px;
+    height: 50px;
+    
+}
+.space{
+    justify-content: space-between;
+}
+
+
+
+.parede{
+    border: 2px solid black;
+    height: 600px;
+    width: 1000px;
+    margin: 20px;
+    background-color: #717171;
+
+
+}
+
+
+.fase{
+    margin-top: 20px;
+    margin-left: 20px;
+    border-left: 4px solid black;
+    border-top: 4px solid black;
+    border-right: 4px solid black;
+    height: 200px;
+    width: 960px;
+    
+}
+
+.neutro{
+    
+    margin-top: 10px;
+    border-left:4px solid blue;
+    border-top: 4px solid blue;
+    height: 200px;
+    width: 480px;
+    margin-left: 5px;
+
+}
+
+.retorno{
+    border-top: 4px solid burlywood;
+    border-right: 4px solid burlywood;
+    margin-top: 10px;
+    height: 200px;
+    width:480px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+
+
