@@ -98,10 +98,12 @@ html,body{
 
 .conteudo{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    width: 100%;
+    width: 500px;
+    height: 600px;
     box-shadow: 2px -5px 16px rgb(163, 162, 162);
-    
-
+}
+.content{
+    justify-content: space-between;
 }
 
 .titulo{
@@ -112,8 +114,14 @@ html,body{
 
 .texto{
     font-size: 20px;
+
 }
 
+.texto-container{
+    
+    margin: 20px;
+
+}
 /*Rodapé*/
 .wrapper{
     min-height: 100%;
@@ -397,10 +405,17 @@ svg{
 
 .lampada{
     background-color: chocolate;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 20px;
     
 }
+
+.lamp{
+    display: flex;
+    align-items:inherit;
+    justify-content: flex-end;
+}
+
 .space{
     justify-content: space-between;
 }
@@ -437,6 +452,19 @@ svg{
     height: 200px;
     width: 480px;
     margin-left: 5px;
+
+}
+
+.neutro_c{
+    
+    height: 85px;
+    border-right: solid 4px blue ;
+}
+
+
+.retorno_c{
+    height: 85px;
+    border-left: solid 4px burlywood ;
 
 }
 
