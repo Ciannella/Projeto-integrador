@@ -27,22 +27,34 @@ function showSlides(n) {
   slides[slideIndex - 1].style.display = "block";
   dots[slideIndex - 1].className += " active";
 }
-var slideIndex = 0;
-showSlides();
 
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+
+
+// Eletric simulator 
+// ua função 
+
+
+
+
+
+function checar(){
+  const lamp = document.getElementById('lamp');     // lampada
+
+  const lampNeutral = document.getElementById('lampNeutral');
+  const force = document.getElementById('force');
+  const lampReturn = document.getElementById('lampReturn');
+  const neutralForce= document.getElementById('neutralForce');
+
+  if (neutralForce.checked && lampNeutral.checked){
+    lamp.style.backgroundImage = 'url("acesa.png")'
+
+  } else {
+    lamp.style.backgroundImage = 'url("apagada.png")'
   }
-  slideIndex++;
-  if (slideIndex > slides.length) { slideIndex = 1 }
-  slides[slideIndex - 1].style.display = "block";
-  setTimeout(showSlides, 3000); // Change image every 2 seconds
-}
+
+  console.log(neutralForce.checked)
+  console.log(lampNeutral.checked)
 
 
-
-//  script do  simulador
+} 
 

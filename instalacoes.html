@@ -33,43 +33,67 @@
         </nav>
     </header>
 
-    <div class="center" onload="carregar()"> 
-        <div id="myCanvas" class="myCanvas">
-            <div class="parede">
-                <div class="fase center">
+    <div style="display: flex; justify-content:space-around; align-items:center;">
 
-                    <div class="neutro">
-                        <div class="neutro_c">
+        <div class="center">
+            <div id="myCanvas" class="myCanvas">
+                <div class="parede">
+                    <div class="fase center">
+
+                        <div class="neutro">
+                            <div class="neutro_c">
+
+                            </div>
+
 
                         </div>
 
+                        <div class="center">
+                            <div> <input type="checkbox" name="lampNeutral" id="lampNeutral" onclick="checar()"></div>
+
+                            <div style=" background-image:url(apagada.png); background-size: cover; height: 60px; width: 38px;" id="lamp"></div>
+
+                            <input type="checkbox" name="lampReturn" id="lampReturn" onclick="checar()">
+                        </div>
+
+                        <div class="retorno">
+                            <div class="retorno_c"></div>
+
+                        </div>
 
                     </div>
-                    <input type="checkbox" name="" id="">
-                    <div style="background-color: blue ; height: 30px; width: 30px;"></div>
-                    <input type="checkbox" name="" id="">
-                    <div class="retorno">
-                        <div class="retorno_c"></div>
+
+                    <div style="display: flex; justify-content:space-between; width: 40px;  align-items: flex-start;">
+                        <input type="checkbox" id="force" onclick="checar()">
+                        <input type="checkbox" id="neutralForce" onclick="checar()">
 
                     </div>
+                    <div class="center space">
+                        <div class="quadro_força">Quadro de força</div>
 
+
+                    </div>
+                    <div class="lamp">
+                        <div class="lampada"></div>
+                    </div>
                 </div>
-                
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <div class="center space">
-                    <div class="quadro_força">Quadro de força</div>
-                    
-                    
-                </div>
-                <div class="lamp">
-                    <div class="lampada"></div>
-                </div>
+
+
+
             </div>
-
-
-
         </div>
+    </div>
+
+
+
+    <div>
+        <li>
+            <ul><button>FASE</button></ul>
+            <ul><button>NEUTRO</button></ul>
+            <ul><button>RETORNO</button></ul>
+
+
+        </li>
     </div>
     </div>
 
@@ -178,7 +202,7 @@
         <div class="copy">
 
             Lucas Ciannella de oliveira - projeto firjan senai &copy;
-
+            INPU
         </div>
 
     </footer>
