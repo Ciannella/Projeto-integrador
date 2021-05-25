@@ -403,18 +403,13 @@ svg{
 
 }
 
-.lampada{
+.circuitBreaker{
     background-color: chocolate;
-    width: 20px;
-    height: 50px;
+    width: auto;
+    height: 60px;
     
 }
 
-.lamp{
-    display: flex;
-    align-items:inherit;
-    justify-content: flex-end;
-}
 
 .space{
     justify-content: space-between;
@@ -436,9 +431,9 @@ svg{
 .fase{
     margin-top: 20px;
     margin-left: 20px;
-    border-left: 4px solid black;
-    border-top: 4px solid black;
-    border-right: 4px solid black;
+    border-left: 4px solid #717171;
+    border-top: 4px solid #717171;
+    border-right: 4px solid #717171;
     height: 200px;
     width: 960px;
     
@@ -446,11 +441,11 @@ svg{
 
 .neutro{
     
-    margin-top: 10px;
-    border-left:4px solid blue;
-    border-top: 4px solid blue;
+    margin-top: 30px;
+    border-left:4px solid #717171;
+    border-top: 4px solid #717171;
     height: 200px;
-    width: 480px;
+    width: 280px;
     margin-left: 5px;
 
 }
@@ -458,20 +453,21 @@ svg{
 .neutro_c{
     
     height: 85px;
-    border-right: solid 4px blue ;
+    border-right: solid 4px #717171 ;
 }
 
 
 .retorno_c{
     height: 85px;
-    border-left: solid 4px burlywood ;
+    border-left: solid 4px #717171 ;
 
 }
 
 .retorno{
-    border-top: 4px solid burlywood;
-    border-right: 4px solid burlywood;
-    margin-top: 10px;
+
+    border-top: 4px solid #717171;
+    border-right: 4px solid #717171;
+    margin-top: 30px;
     height: 200px;
     width:480px;
     margin-left: 5px;
@@ -479,7 +475,9 @@ svg{
 }
 
 
-
-
+input[type=checkbox]{
+    height: 15px;
+    width: 30px;
+}
 
 

@@ -31,30 +31,52 @@ function showSlides(n) {
 
 
 // Eletric simulator 
-// ua função 
 
 
 
-
-
-function checar(){
+function checar() {
   const lamp = document.getElementById('lamp');     // lampada
+//check boxxes 
+  const lampNeutral = document.getElementById('lampNeutral'); // fio neutro que vai na lampada
+  const force = document.getElementById('force'); // fio fase 
+  const lampReturn = document.getElementById('lampReturn'); // fio de retorno da lampada 
+  const neutralForce = document.getElementById('neutralForce'); // fio neutro caixa de força 
+  const forceCircuitBreaker = document.getElementById('forceCircuitBreaker') // fio do dijuntor 
+  const returnCircuitBreaker = document.getElementById('returnCircuitBreaker') // retorno do dijuntor 
+//divs que simulam os fios 
+  const fiofase = document.getElementById('fioFase') // div que faz o fio fase 
+  const fioNeutro = document.getElementById('fioNeutro') // div que faz o fio neutro 
+  const fioNeutroC = document.getElementById('fioNeutroC') // div fio neutro 
+  const fioRetorno = document.getElementById('fioRetorno') // div que faz o fio retorno
+  const fioRetornoC = document.getElementById('fioRetornoC') // div continução do fio retorno 
 
-  const lampNeutral = document.getElementById('lampNeutral');
-  const force = document.getElementById('force');
-  const lampReturn = document.getElementById('lampReturn');
-  const neutralForce= document.getElementById('neutralForce');
-
-  if (neutralForce.checked && lampNeutral.checked){
+  if (force.checked && forceCircuitBreaker.checked) {
+    fiofase.style = 'border-top: 4px solid black; border-left: 4px solid black; border-right: 4px solid black;'
+  } else { 
+    fiofase.style = ''
+  } if (neutralForce.checked && lampNeutral.checked){
+    fioNeutro.style = 'border-left: 4px solid blue; border-top: 4px solid blue;'
+    fioNeutroC.style = ' border-right: 4px solid blue;'
+  } else {
+    fioNeutroC.style = ''
+    fioNeutro.style = ''
+  } if (lampReturn.checked && returnCircuitBreaker.checked){
+    fioRetorno.style = 'border-top: 4px solid burlywood; border-right: 4px solid burlywood;'
+    fioRetornoC.style = ' border-left: 4px solid burlywood;'
+  } else {
+    fioRetornoC.style = ''
+    fioRetorno.style = ''
+  } if(force.checked && forceCircuitBreaker.checked && neutralForce.checked && lampNeutral.checked && lampReturn.checked && returnCircuitBreaker.checked){
     lamp.style.backgroundImage = 'url("acesa.png")'
 
-  } else {
-    lamp.style.backgroundImage = 'url("apagada.png")'
+  } else{
+  lamp.style.backgroundImage = 'url("apagada.png")'
   }
 
-  console.log(neutralForce.checked)
-  console.log(lampNeutral.checked)
+  
+  console.log(returnCircuitBreaker.checked)
+  console.log(forceCircuitBreaker.checked)
 
 
-} 
+}
 
