@@ -35,6 +35,7 @@ function showSlides(n) {
 
 
 function checar() {
+  const interacao = document.getElementById('int')
   const lamp = document.getElementById('lamp');     // lampada
 //check boxxes 
   const lampNeutral = document.getElementById('lampNeutral'); // fio neutro que vai na lampada
@@ -50,9 +51,10 @@ function checar() {
   const fioRetorno = document.getElementById('fioRetorno') // div que faz o fio retorno
   const fioRetornoC = document.getElementById('fioRetornoC') // div continução do fio retorno 
 
+
   if (force.checked && forceCircuitBreaker.checked) {
     fiofase.style = 'border-top: 4px solid black; border-left: 4px solid black; border-right: 4px solid black;'
-  } else { 
+  }   else { 
     fiofase.style = ''
   } if (neutralForce.checked && lampNeutral.checked){
     fioNeutro.style = 'border-left: 4px solid blue; border-top: 4px solid blue;'
@@ -68,14 +70,13 @@ function checar() {
     fioRetorno.style = ''
   } if(force.checked && forceCircuitBreaker.checked && neutralForce.checked && lampNeutral.checked && lampReturn.checked && returnCircuitBreaker.checked){
     lamp.style.backgroundImage = 'url("acesa.png")'
+    interacao.innerHTML += '<div> PARABÉNS, você conseguiu </div> '
+    
 
   } else{
   lamp.style.backgroundImage = 'url("apagada.png")'
+  interacao.innerText = ''
   }
-
-  
-  console.log(returnCircuitBreaker.checked)
-  console.log(forceCircuitBreaker.checked)
 
 
 }
