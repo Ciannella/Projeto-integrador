@@ -50,6 +50,7 @@ function checar() {
   const fioNeutroC = document.getElementById('fioNeutroC') // div fio neutro 
   const fioRetorno = document.getElementById('fioRetorno') // div que faz o fio retorno
   const fioRetornoC = document.getElementById('fioRetornoC') // div continução do fio retorno 
+  const interruptor = document.getElementById('interruptor') // interruptor 
 
 
   if (force.checked && forceCircuitBreaker.checked) {
@@ -70,11 +71,14 @@ function checar() {
     fioRetorno.style = ''
   } if(force.checked && forceCircuitBreaker.checked && neutralForce.checked && lampNeutral.checked && lampReturn.checked && returnCircuitBreaker.checked){
     lamp.style.backgroundImage = 'url("acesa.png")'
+    interruptor.style.backgroundImage = 'url("interruptorright.png")'
+    
     interacao.innerHTML += '<div> PARABÉNS, você conseguiu </div> '
     
 
   } else{
   lamp.style.backgroundImage = 'url("apagada.png")'
+  interruptor.style.backgroundImage = 'url("interruptorleft.png")'
   interacao.innerText = ''
   }
 

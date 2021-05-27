@@ -404,9 +404,8 @@ svg{
 }
 
 .circuitBreaker{
-    background-color: chocolate;
-    width: auto;
-    height: 60px;
+    width: 60px;
+    height: 90px;
     
 }
 
@@ -452,25 +451,26 @@ svg{
 }
 
 .neutro_c{
-    
+    border-radius: 0px 10px 0px 0px;
     height: 85px;
     border-right: solid 4px #717171 ;
 }
 
 
 .retorno_c{
+    border-radius: 10px 0px 0px 0px;
     height: 85px;
     border-left: solid 4px #717171 ;
 
 }
 
 .retorno{
-
+    border-radius: 10px ;
     border-top: 4px solid #717171;
     border-right: 4px solid #717171;
     margin-top: 30px;
     height: 200px;
-    width:480px;
+    width:520px;
     margin-left: 5px;
     margin-right: 5px;
 }
@@ -478,7 +478,7 @@ svg{
 
 input[type=checkbox]{
     height: 15px;
-    width: 30px;
+    width: 20px;
 }
 
 
