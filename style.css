@@ -390,7 +390,7 @@ svg{
 .myCanvas{
     height: 650px;
     width: 1050px;
-    border: 2px solid black;
+    border: 2px solid rgb(56, 56, 56);
     background-image: url(https://www.varejaodastintas.com.br/wp-content/uploads/2017/11/shutterstock_109482227-1024x802.jpg);
     
 }
@@ -417,11 +417,11 @@ svg{
 
 
 .parede{
-    border: 2px solid black;
+    border: 2px solid rgb(32, 32, 32);
     height: 600px;
     width: 1000px;
     margin: 20px;
-    background-color: #717171;
+    background-color: #717171f1;
 
 
 }
@@ -473,6 +473,20 @@ svg{
     width:520px;
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.textoSimulador{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+
+.int{
+    justify-content: space-evenly; 
+    height: 200px; 
+    width: 600px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 

@@ -32,34 +32,55 @@
             </ul>
         </nav>
     </header>
+    <div class="center">
+
+        <div>
+            <h1>Simulador de instalações elétricas</h1>
+            <p class="textoSimulador"> Você sabe como é a instalação de uma lâmpada? <br> tente achar a conclusão no
+                simulador!</p>
+            <br>
+            <p class="textoSimulador dica"><span style="background-color: #5CC4E3;"><strong>Uma dica!</strong>, os
+                    condutores fase geralmente são: vermelho, preto ou marrom. <br> Já a cor do condutor Neutro
+                    geralmente é azul claro. <br> E o condutor de retorno encontramos na cor amarela! </p></span>
+
+        </div>
+
+
+    </div>
 
     <div style="display: flex; justify-content:space-around; align-items:center;">
-
         <div class="center">
             <div id="myCanvas" class="myCanvas">
                 <div class="parede">
-                    <div id="fioFase" class="fase center">
 
-                        <div id="fioNeutro" class="neutro">
-                            <div id="fioNeutroC" class="neutro_c">
+                    <div>
+                        <!-- fio fase, neutro e retorno -->
+                        <div id="fioFase" class="fase center">
+
+                            <div id="fioNeutro" class="neutro">
+                                <div id="fioNeutroC" class="neutro_c">
+
+                                </div>
+
 
                             </div>
 
+                            <div class="center">
+                                <div> <input style="margin: 0;" type="checkbox" name="lampNeutral" id="lampNeutral"
+                                        onclick="checar()">
+                                </div>
 
-                        </div>
+                                <div style=" background-image:url(apagada.png); background-size: cover; height: 73px; width: 48px;"
+                                    id="lamp"></div>
 
-                        <div class="center">
-                            <div> <input type="checkbox" name="lampNeutral" id="lampNeutral" onclick="checar()"></div>
+                                <input style="margin: 0;" type="checkbox" name="lampReturn" id="lampReturn"
+                                    onclick="checar()">
+                            </div>
 
-                            <div style=" background-image:url(apagada.png); background-size: cover; height: 73px; width: 48px;"
-                                id="lamp"></div>
+                            <div id="fioRetorno" class="retorno">
+                                <div id="fioRetornoC" class="retorno_c"></div>
 
-                            <input type="checkbox" name="lampReturn" id="lampReturn" onclick="checar()">
-                        </div>
-
-                        <div id="fioRetorno" class="retorno">
-                            <div id="fioRetornoC" class="retorno_c"></div>
-
+                            </div>
                         </div>
 
                     </div>
@@ -67,28 +88,31 @@
                     <div
                         style=" display: flex; justify-content:space-between;height: 15px; width:auto;  align-items: flex-start;">
                         <div>
-                            <input type="checkbox" id="force" onclick="checar()">
-                            <input type="checkbox" id="neutralForce" onclick="checar()">
+                            <input style="margin-left: 10px;" type="checkbox" id="force" onclick="checar()">
                         </div>
-                        <div class="center" id="int" style=" justify-content: space-evenly; height: 200px; width: 600px;">
-                        
+                        <div class="int center" id="int">
+
                         </div>
 
-                        <div class="lamp">
-                            
+                        <div>
+
                             <div>
                                 <input type="checkbox" id="returnCircuitBreaker" onclick="checar()">
                                 <input type="checkbox" id="forceCircuitBreaker" onclick="checar()">
 
                             </div>
-                            <div id="interruptor" class="circuitBreaker" style="background-image:url(interruptorleft.png); background-size: cover;">
-    
+                            <div id="interruptor" class="circuitBreaker"
+                                style="background-image:url(interruptorleft.png); background-size: cover;">
+
                             </div>
 
                         </div>
                     </div>
                     <div class="center space">
-                        <div class="quadro_força">Quadro de força</div>
+                        <div class="quadro_força center">
+
+                            <input type="checkbox" id="neutralForce" onclick="checar()">
+                        </div>
                     </div>
                 </div>
 
@@ -99,7 +123,7 @@
 
 
 
-    
+
 
 
 
