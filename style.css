@@ -138,18 +138,26 @@ html,body{
 }
 
 .copy{
-    background-color: rgb(41, 39, 39);
-    text-align: center;
+    
+    align-items: flex-end;
     height: 40px;
     
 
 }
 svg{
-    height: 140px;
-    width: 140px;
+    height: 80px;
+    width: 80px;
 }
 
+.links-svg{
+    display: flex;
+    justify-content: space-evenly;
+}
 
+.texto-footer{
+ max-width: 300px;
+ text-align: justify;
+}
 
 /*SLIDESHOW*/
 
