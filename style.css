@@ -103,7 +103,7 @@ html,body{
     box-shadow: 2px -5px 16px rgb(163, 162, 162);
 }
 .content{
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .titulo{
@@ -405,7 +405,7 @@ svg{
 .quadro_força{
     width: 100px;
     height: 150px;
-    background-color: #272121;
+    background-image: url(quadrodeluz.png);
     color: white;
     display: flex;
 

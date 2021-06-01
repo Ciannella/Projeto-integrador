@@ -55,11 +55,13 @@ function checar() {
 
   if (force.checked && forceCircuitBreaker.checked) {
     fiofase.style = 'border-top: 4px solid black; border-left: 4px solid black; border-right: 4px solid black;'
+    
   } else {
     fiofase.style = ''
   } if (neutralForce.checked && lampNeutral.checked) {
     fioNeutro.style = 'border-left: 4px solid blue; border-top: 4px solid blue;'
     fioNeutroC.style = ' border-right: 4px solid blue ;'
+   
   } else {
     fioNeutroC.style = ''
     fioNeutro.style = ''
@@ -72,10 +74,8 @@ function checar() {
   } if (force.checked && forceCircuitBreaker.checked && neutralForce.checked && lampNeutral.checked && lampReturn.checked && returnCircuitBreaker.checked) {
     lamp.style.backgroundImage = 'url("acesa.png")'
     interruptor.style.backgroundImage = 'url("interruptorright.png")'
-    interacao.innerHTML += '<div class"center"> Parabéns <br> Você conseguiu!</div> '
-    interacao.innerHTML += '<audio src="aplausos.mp3"> </audio>'
-    const audio = document.querySelector('audio')
-    audio.play()
+    interacao.innerHTML += '<div style = "font-size:30px;"> Parabéns,Você acertou o circuito de iluminação! <br></div> '
+   interacao.innerHTML += ' <div style="color: #B22222; font-size:30px;"> Em breve teremos outros circuitos disponíveis </div> '
 
 
   } else {
